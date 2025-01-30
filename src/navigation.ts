@@ -1,23 +1,23 @@
-import { getPermalink } from './utils/permalinks';
+import { getPermalink } from "./utils/permalinks";
 
 export const headerData = {
   links: [
     {
-      text: 'Services',
-      href: getPermalink('/#services'),
+      text: "Services",
+      href: getPermalink("/#services"),
     },
     {
-      text: 'Étapes d\'un projet',
-      href: getPermalink('/#steps'),
+      text: "Étapes d'un projet",
+      href: getPermalink("/#steps"),
     },
     {
-      text: 'FAQ',
-      href: getPermalink('/#faq'),
+      text: "FAQ",
+      href: getPermalink("/#faq"),
     },
     {
-      text: 'Blog',
-      href: getPermalink('/blog'),
-    }
+      text: "Blog",
+      href: getPermalink("/blog"),
+    },
   ],
 };
 
@@ -69,17 +69,32 @@ export const footerData = {
   //   },
   // ],
   secondaryLinks: [
-    { text: 'Mentions légales', href: getPermalink('/mentions-legales') },
-    { text: 'Politique de confidentialité', href: getPermalink('/politique-de-confidentialite') },
-    { text: 'CGU', href: getPermalink('/cgu') },
+    { text: "Mentions légales", href: getPermalink("/mentions-legales") },
+    {
+      text: "Politique de confidentialité",
+      href: getPermalink("/politique-de-confidentialite"),
+    },
+    { text: "CGU", href: getPermalink("/cgu") },
   ],
   socialLinks: [
-    { ariaLabel: 'Mail', icon: 'tabler:mail', href: 'mailto:contact@gregoryleroux.com' },
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/gregoryleroux/' },
+    {
+      ariaLabel: "Mail",
+      icon: "tabler:mail",
+      href: "mailto:contact@gregoryleroux.com",
+    },
+    {
+      ariaLabel: "LinkedIn",
+      icon: "tabler:brand-linkedin",
+      href: "https://www.linkedin.com/in/gregoryleroux/",
+    },
     // { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/' },
     // { ariaLabel: 'Tiktok', icon: 'tabler:brand-tiktok', href: 'https://www.tiktok.com/' },
     // { ariaLabel: 'Youtube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/' },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/lrxgregory' },
+    {
+      ariaLabel: "Github",
+      icon: "tabler:brand-github",
+      href: "https://github.com/lrxgregory",
+    },
   ],
   footNote: `
     <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
