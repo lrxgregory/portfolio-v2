@@ -1,5 +1,5 @@
 ---
-import '@fontsource-variable/inter';
+import "@fontsource-variable/inter";
 
 // 'DM Sans'
 // Nunito
@@ -21,43 +21,72 @@ import '@fontsource-variable/inter';
 
 <style is:inline>
   :root {
-    --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
+    --aw-font-sans: "Inter Variable";
+    --aw-font-serif: "Inter Variable";
+    --aw-font-heading: "Inter Variable";
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-color-primary: rgb(150, 191, 72);
+    --aw-color-secondary: rgb(170, 217, 81);
+    --aw-color-accent: rgb(150, 191, 72);
 
     --aw-color-text-heading: rgb(0 0 0);
     --aw-color-text-default: rgb(16 16 16);
     --aw-color-text-muted: rgb(16 16 16 / 66%);
     --aw-color-bg-page: rgb(255 255 255);
 
-    --aw-color-bg-page-dark: rgb(3 6 32);
+    --aw-color-bg-page-dark: rgb(24, 29, 35);
 
     ::selection {
       background-color: lavender;
     }
+
+    /* Styles de focus en mode clair */
+    .btn-primary:focus {
+      --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+        var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+        calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+      box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+        var(--tw-shadow, 0 0 #0000);
+      --tw-ring-opacity: 1;
+      --tw-ring-color: var(
+        --aw-color-primary
+      ); /* Couleur de focus en mode clair */
+      --tw-ring-offset-width: 2px;
+      --tw-ring-offset-color: var(
+        --aw-color-secondary
+      ); /* Couleur de l'offset en mode clair */
+    }
   }
 
   .dark {
-    --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
+    --aw-font-sans: "Inter Variable";
+    --aw-font-serif: "Inter Variable";
+    --aw-font-heading: "Inter Variable";
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-color-primary: rgb(54, 147, 95);
+    --aw-color-secondary: rgb(65, 175, 113);
+    --aw-color-accent: rgb(150, 191, 72);
 
     --aw-color-text-heading: rgb(247, 248, 248);
     --aw-color-text-default: rgb(229 236 246);
     --aw-color-text-muted: rgb(229 236 246 / 66%);
-    --aw-color-bg-page: rgb(3 6 32);
+    --aw-color-bg-page: rgb(27, 33, 39);
+    --aw-color-bg-card: rgb(37, 44, 53);
 
     ::selection {
       background-color: black;
       color: snow;
+    }
+
+    /* Styles de focus en mode sombre */
+    .btn-primary:focus {
+      --tw-ring-color: var(
+        --aw-color-primary
+      ); /* Couleur de focus en mode sombre */
+      --tw-ring-offset-color: var(
+        --aw-color-secondary
+      ); /* Couleur de l'offset en mode sombre */
     }
   }
 </style>

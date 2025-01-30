@@ -1,16 +1,13 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
@@ -25,220 +22,86 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Réserver un appel',
+        href: 'https://calendly.com/contact-gregoryleroux/appel-decouverte',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:calendar-event',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Voir mes services', href: '#services' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 5.0</span> + Tailwind CSS
+      Je vous accompagne dans vos projets <span class="text-accent dark:text-secondary highlight"> Shopify</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+        De la conception de la boutique aux solutions techniques avancées</span>
     </Fragment>
   </Hero>
-
-  <!-- Note Widget ******************* -->
-
-  <Note />
 
   <!-- Features Widget *************** -->
 
   <Features
-    id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    id="services"
+    tagline="Solutions E-commerce"
+    title="Mes services Shopify"
+    subtitle="Des solutions sur mesure pour optimiser votre boutique Shopify"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Création de Boutique Shopify sur mesure',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Mise en place et configuration complète d’une boutique Shopify prête à vendre.',
+        icon: 'tabler:shopping-cart',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Développement Shopify sur mesure',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Développement de fonctionnalités avancées, API, webhooks, intégrations tierces.',
+        icon: 'tabler:code',
       },
       {
-        title: 'Best Practices',
+        title: 'Création de thèmes Shopify personnalisés',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Un design unique et optimisé pour l’expérience utilisateur et les conversions.',
+        icon: 'tabler:palette',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Migration de boutique Prestashop vers Shopify',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
-      },
+          'Accompagnement complet pour transférer votre boutique Prestashop vers Shopify sans perte de données.',
+        icon: 'tabler:exchange',
+      }
     ]}
   />
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
-    items={[
-      {
-        title: 'Built on top of Astro 5.0',
-        description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
-      },
-      {
-        title: 'Styled using Tailwind CSS',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
-      },
-      {
-        title: 'Cross-browser compatibility',
-        description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Lancez votre boutique Shopify en 3 étapes simples"
+    subtitle="Une approche personnalisée pour vous aider à atteindre vos objectifs."
+    id="steps"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Étape 1 : Définition du projet',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          "Nous discutons ensemble de vos besoins : design, fonctionnalités, intégrations API, migration Prestashop, etc.",
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Étape 2 : Développement & Personnalisation',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          "Nous travaillons en étroite collaboration pour concevoir, développer et personnaliser votre boutique Shopify.",
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Étape 3 : Mise en ligne et suivi',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          "Je vous accompagne dans la prise en main et vous propose un suivi pour garantir un lancement sans accroc.",
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
+        title: 'Votre boutique est prête à vendre !',
         icon: 'tabler:check',
       },
     ]}
@@ -251,128 +114,100 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="Expertise Shopify"
+    subtitle="Des solutions techniques avancées pour votre boutique en ligne"
+    tagline="Compétences techniques"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        title: 'Développement Backend',
+        description: "Architecture robuste et évolutive pour gérer vos opérations e-commerce avec efficacité.",
+        icon: 'flat-color-icons:database',
+      },
+      {
+        title: 'Thèmes Sur Mesure',
+        description: "Un design unique qui reflète votre marque et optimise l'expérience utilisateur.",
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+        title: 'Intégrations API',
+        description: "Connexion transparente entre Shopify et vos outils externes pour une gestion simplifiée.",
+        icon: 'flat-color-icons:data-configuration',
       },
       {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
+        title: 'Migration PrestaShop vers Shopify',
+        description: "Transfert sécurisé de votre boutique PrestaShop vers Shopify, sans perte de données.",
+        icon: 'tabler:exchange',
       },
       {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+        title: 'Automatisation',
+        description: "Workflows automatisés pour simplifier vos opérations quotidiennes et gagner du temps.",
+        icon: 'flat-color-icons:automatic',
       },
       {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
+        title: 'Support Technique',
+        description: "Accompagnement expert pour garantir le bon fonctionnement de votre boutique.",
+        icon: 'flat-color-icons:support',
+      }
     ]}
   >
-    <Fragment slot="bg">
+    <Fragment>
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
 
-  <!-- HighlightedPosts Widget ******* -->
-
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
-
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
+    title="Questions fréquentes"
+    subtitle="Réponses à vos interrogations pour une collaboration en toute transparence"
+    tagline="Tout ce que vous devez savoir"
     classes={{ container: 'max-w-6xl' }}
+    id="faq"
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Comment se déroule un projet de création de boutique Shopify ?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "Le processus commence par une réunion de cadrage pour comprendre vos besoins et objectifs. Je propose ensuite un devis détaillé et un planning. Le développement se fait par étapes avec des points réguliers pour validation. Une fois la boutique terminée, je vous forme à son utilisation et reste disponible pour le support.",
+      },
+      // {
+      //   title: 'Combien de temps prend la migration depuis PrestaShop ?',
+      //   description:
+      //     "La durée dépend de la taille de votre catalogue et de la complexité de votre boutique actuelle. En général, comptez 2 à 4 semaines pour une migration complète, incluant les produits, clients, commandes et contenus. Le processus est planifié pour minimiser l'impact sur votre activité.",
+      // },
+      {
+        title: 'Proposez-vous un accompagnement après la mise en ligne ?',
+        description:
+          "Oui, je propose plusieurs formules de maintenance et support technique. Cela inclut les mises à jour de sécurité, l'optimisation continue des performances, et une assistance technique rapide en cas de besoin. Je peux également vous former à l'utilisation avancée de votre boutique.",
       },
       {
-        title: 'What do I need to start?',
+        title: 'Pouvez-vous développer des fonctionnalités sur mesure ?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          "Absolument. Grâce à mon expertise en développement backend Shopify, je peux créer des fonctionnalités personnalisées via l'API Shopify, développer des applications privées, et mettre en place des automatisations spécifiques à vos besoins.",
       },
+      // {
+      //   title: 'Comment gérez-vous les projets internationaux ?',
+      //   description:
+      //     "Ayant travaillé avec des clients internationaux comme Decathlon, je maîtrise la mise en place de boutiques multi-langues et multi-devises. Je peux configurer des domaines géographiques, optimiser le SEO international, et intégrer des solutions de traduction.",
+      // },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Quels sont vos tarifs ?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
-      },
-      {
-        title: "What's something that you don't understand?",
-        description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "Chaque projet étant unique, les tarifs sont établis sur mesure en fonction de vos besoins. Je propose un devis détaillé après notre première discussion, incluant le développement, les intégrations nécessaires, et les options de maintenance.",
       },
     ]}
   />
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!-- <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Projets réalisés', amount: '50+' },
+      { title: 'Clients satisfaits', amount: '98%' },
+      { title: 'Heures de développement', amount: '1000+' },
+      { title: 'Revenus générés', amount: '1M€+' },
     ]}
-  />
+  /> -->
+
 
   <!-- CallToAction Widget *********** -->
 
@@ -380,20 +215,25 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Réservez un appel',
+        href: 'https://calendly.com/contact-gregoryleroux/appel-decouverte',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:calendar-event',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Prêt à propulser votre boutique Shopify ?
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Discutons de votre projet et transformons vos idées en réalité.
     </Fragment>
   </CallToAction>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Derniers Articles sur Shopify"
+/>
 </Layout>
