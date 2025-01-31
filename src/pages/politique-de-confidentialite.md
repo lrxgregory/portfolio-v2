@@ -54,7 +54,7 @@ Lorsque vous utilisez notre site, les données sont collectées de deux façons 
 
 **Article 3.3 : Hébergement des données**
 
-Le site **Setupify** est hébergé par :  
+Le site **gregoryleroux.com** est hébergé par :  
 **Hostinger**  
 Adresse : 61 Lordou Vironos str. 6023 Larnaca, Chypre
 Contact : +37064503378
@@ -79,7 +79,7 @@ Lors de votre première visite, une bannière de consentement s’affiche pour v
 **Article 4.1 : Le responsable du traitement des données**
 
 Les données personnelles sont collectées et traitées par :  
-**Setupify (Grégory Leroux)**  
+**gregoryleroux.com (Grégory Leroux)**  
 **Adresse** : 27 Boulevard de l’égalité, 59200 Tourcoing  
 **Email** : contact@gregoryleroux.com
 

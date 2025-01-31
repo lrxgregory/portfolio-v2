@@ -27,15 +27,15 @@ export const getFooterData = (lang: Language = defaultLang) => ({
   secondaryLinks: [
     {
       text: t("footer.legal", lang),
-      href: getPermalink("/mentions-legales")
+      href: getPermalink(`/${lang}/mentions-legales`),
     },
     {
       text: t("footer.privacy", lang),
-      href: getPermalink("/politique-de-confidentialite"),
+      href: getPermalink(`/${lang}/politique-de-confidentialite`),
     },
     {
       text: t("footer.terms", lang),
-      href: getPermalink("/cgu")
+      href: getPermalink(`/${lang}/cgu`),
     },
   ],
   socialLinks: [
