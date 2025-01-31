@@ -12,8 +12,7 @@ const currentLang = getLangFromUrl(Astro.url);
 
 <div class:list={['relative', className]}>
   <select
-    id="language-selector"
-    class="appearance-none bg-transparent border border-gray-300 dark:border-gray-600 rounded-lg px-2 py-1 pr-6 hover:border-gray-400 dark:hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-600 dark:focus:ring-primary-400 text-sm"
+    class="language-selector appearance-none bg-transparent border border-gray-300 dark:border-gray-600 rounded-lg px-2 py-1 pr-6 hover:border-gray-400 dark:hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-600 dark:focus:ring-primary-400 text-sm"
     value={currentLang}
   >
     {
@@ -30,14 +29,13 @@ const currentLang = getLangFromUrl(Astro.url);
 <script>
   import { translatePath, type Language } from "~/utils/i18n";
 
-  const languageSelector = document.getElementById('language-selector') as HTMLSelectElement;
-
-  if (languageSelector) {
-    languageSelector.addEventListener('change', (e) => {
-      const target = e.target as HTMLSelectElement;
-      const newLang = target.value as Language;
-      const newPath = translatePath(window.location.pathname, newLang);
-      window.location.pathname = newPath;
+  document.querySelectorAll('.language-selector').forEach((selector) => {
+    selector.addEventListener('change', (e) => {
+      const newPath = translatePath(
+        window.location.pathname, 
+        (e.target as HTMLSelectElement).value as Language
+      );
+      window.location.href = newPath + window.location.hash;
     });
-  }
+  });
 </script>

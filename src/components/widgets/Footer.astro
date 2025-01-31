@@ -1,6 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components';
 import { SITE } from 'astrowind:config';
+import { getFooterData } from '~/navigation';
+import { getLangFromUrl } from '~/utils/i18n';
 import { getHomePermalink } from '~/utils/permalinks';
 
 interface Link {
@@ -16,14 +18,16 @@ interface Links {
 }
 
 export interface Props {
-  links: Array<Links>;
-  secondaryLinks: Array<Link>;
-  socialLinks: Array<Link>;
+  links?: Array<Links>;
+  secondaryLinks?: Array<Link>;
+  socialLinks?: Array<Link>;
   footNote?: string;
   theme?: string;
 }
 
-const { socialLinks = [], secondaryLinks = [], theme = 'light' } = Astro.props;
+const { theme = 'light' } = Astro.props;
+const currentLang = getLangFromUrl(Astro.url);
+const { socialLinks, secondaryLinks, footNote } = getFooterData(currentLang);
 ---
 
 <footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>

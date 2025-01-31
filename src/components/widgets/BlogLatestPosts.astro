@@ -6,7 +6,9 @@ import Grid from '~/components/blog/Grid.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import type { Widget } from '~/types';
 import { findLatestPosts } from '~/utils/blog';
+import { getLangFromUrl, t } from '~/utils/i18n';
 import { getBlogPermalink } from '~/utils/permalinks';
+
 import Button from '../ui/Button.astro';
 
 export interface Props extends Widget {
@@ -17,9 +19,11 @@ export interface Props extends Widget {
   count?: number;
 }
 
+const currentLang = getLangFromUrl(Astro.url);
+
 const {
-  title = await Astro.slots.render('title'),
-  linkText = 'Voir tous les posts',
+  title = t('blog.title', currentLang),
+  linkText = t('blog.linkText', currentLang),
   linkUrl = getBlogPermalink(),
   information = await Astro.slots.render('information'),
   count = 4,
@@ -58,6 +62,6 @@ const posts = APP_BLOG.isEnabled ? await findLatestPosts({ count }) : [];
       <Grid posts={posts} />
     </WidgetWrapper>
   ) : (
-    <Fragment />
+    ''
   )
 }

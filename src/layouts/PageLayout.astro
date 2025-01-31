@@ -3,7 +3,7 @@ import Footer from '~/components/widgets/Footer.astro';
 import Header from '~/components/widgets/Header.astro';
 import Layout from '~/layouts/Layout.astro';
 
-import { footerData, getHeaderData } from '~/navigation';
+import { getFooterData, getHeaderData } from '~/navigation';
 import { getLangFromUrl } from '~/utils/i18n';
 
 import type { MetaData } from '~/types';
@@ -27,6 +27,6 @@ const currentLang = getLangFromUrl(Astro.url);
     <slot />
   </main>
   <slot name="footer">
-    <Footer {...footerData} />
+    <Footer {...getFooterData(currentLang)} />
   </slot>
 </Layout>

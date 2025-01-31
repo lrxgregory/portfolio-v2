@@ -1,8 +1,11 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Acerca de",
-    "projects": "Ver Mis Servicios",
+    "about": "Sobre mí",
+    "services": "Servicios",
+    "steps": "Etapas del Proyecto",
+    "faq": "Preguntas Frecuentes",
+    "blog": "Blog",
     "contact": "Contacto"
   },
   "hero": {
@@ -107,6 +110,12 @@
     }
   },
   "blog": {
-    "title": "Últimos Artículos de Shopify"
+    "title": "Últimos Artículos de Shopify",
+    "linkText": "Ver todos los artículos"
+  },
+  "footer": {
+    "legal": "Aviso Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Uso"
   }
 }

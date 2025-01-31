@@ -2,7 +2,10 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "projects": "View My Services",
+    "services": "Services",
+    "steps": "Project Steps",
+    "faq": "FAQ",
+    "blog": "Blog",
     "contact": "Contact"
   },
   "hero": {
@@ -107,6 +110,12 @@
     }
   },
   "blog": {
-    "title": "Latest Shopify Articles"
+    "title": "Latest Shopify Articles",
+    "linkText": "See all articles"
+  },
+  "footer": {
+    "legal": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
   }
 }
