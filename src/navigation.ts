@@ -17,7 +17,7 @@ export const getHeaderData = (lang: Language = defaultLang) => ({
     },
     {
       text: t("nav.blog", lang),
-      href: getPermalink(`/${lang}/blog`),
+      href: getPermalink(`/blog`),
     },
   ],
 });
