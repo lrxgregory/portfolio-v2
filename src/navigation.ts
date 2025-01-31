@@ -5,15 +5,15 @@ export const getHeaderData = (lang: Language = defaultLang) => ({
   links: [
     {
       text: t("nav.services", lang),
-      href: getPermalink(`/${lang}#services`),
+      href: '#services',
     },
     {
       text: t("nav.steps", lang),
-      href: getPermalink(`/${lang}#steps`),
+      href: "#steps",
     },
     {
       text: t("nav.faq", lang),
-      href: getPermalink(`/${lang}#faq`),
+      href: "#faq",
     },
     {
       text: t("nav.blog", lang),
