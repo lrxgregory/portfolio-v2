@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "projects": "Ver Mis Servicios",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Te ayudo con tus proyectos",
+    "subtitle": "Desde el diseño de tiendas hasta soluciones técnicas avanzadas",
+    "cta": "Agenda una llamada"
+  },
+  "about": {
+    "title": "Lanza Tu Tienda Shopify en 3 Sencillos Pasos",
+    "subtitle": "Un enfoque personalizado para ayudarte a alcanzar tus metas",
+    "step1": {
+      "title": "Paso 1: Definición del Proyecto",
+      "description": "Discutimos juntos tus necesidades: diseño, características, integraciones API, migración desde PrestaShop, etc."
+    },
+    "step2": {
+      "title": "Paso 2: Desarrollo y Personalización",
+      "description": "Trabajamos de cerca para diseñar, desarrollar y personalizar tu tienda Shopify."
+    },
+    "step3": {
+      "title": "Paso 3: Lanzamiento y Soporte",
+      "description": "Te guío en la configuración y te ofrezco soporte para asegurar un lanzamiento sin problemas."
+    },
+    "step4": {
+      "title": "¡Tu tienda está lista para vender!"
+    }
+  },
+  "services": {
+    "title": "Mis Servicios Shopify",
+    "description": "Soluciones personalizadas para optimizar tu tienda Shopify",
+    "service1": {
+      "title": "Creación de Tienda Shopify Personalizada",
+      "description": "Configuración completa y puesta en marcha de una tienda Shopify lista para vender."
+    },
+    "service2": {
+      "title": "Desarrollo Personalizado de Shopify",
+      "description": "Desarrollo de características avanzadas, APIs, webhooks e integraciones de terceros."
+    },
+    "service3": {
+      "title": "Temas Personalizados de Shopify",
+      "description": "Un diseño único optimizado para la experiencia del usuario y las conversiones."
+    },
+    "service4": {
+      "title": "Migración de PrestaShop a Shopify",
+      "description": "Soporte completo para transferir tu tienda de PrestaShop a Shopify sin pérdida de datos."
+    }
+  },
+  "expertise": {
+    "title": "Experiencia en Shopify",
+    "subtitle": "Soluciones técnicas avanzadas para tu tienda en línea",
+    "tagline": "Habilidades Técnicas",
+    "item1": {
+      "title": "Desarrollo Backend",
+      "description": "Una arquitectura robusta y escalable para gestionar eficientemente tus operaciones de comercio electrónico."
+    },
+    "item2": {
+      "title": "Temas Personalizados",
+      "description": "Un diseño único que refleja tu marca y mejora la experiencia del usuario."
+    },
+    "item3": {
+      "title": "Integraciones API",
+      "description": "Conexión perfecta entre Shopify y tus herramientas externas para una gestión simplificada."
+    },
+    "item4": {
+      "title": "Migración de PrestaShop a Shopify",
+      "description": "Transferencia segura de tu tienda PrestaShop a Shopify sin pérdida de datos."
+    },
+    "item5": {
+      "title": "Automatización",
+      "description": "Flujos de trabajo automatizados para simplificar las operaciones diarias y ahorrar tiempo."
+    },
+    "item6": {
+      "title": "Soporte Técnico",
+      "description": "Asesoría experta para asegurar que tu tienda funcione sin problemas."
+    }
+  },
+  "contact": {
+    "title": "Contáctame",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Respuestas a tus preguntas para una colaboración transparente",
+    "tagline": "Todo lo que Necesitas Saber",
+    "item1": {
+      "title": "¿Cómo funciona un proyecto de creación de tienda Shopify?",
+      "description": "El proceso comienza con una reunión inicial para entender tus necesidades y objetivos. Luego, te proporciono una cotización detallada y un cronograma. El desarrollo se realiza en etapas con puntos de validación regulares. Una vez que la tienda está completa, te entreno en su uso y quedo disponible para soporte."
+    },
+    "item2": {
+      "title": "¿Ofreces soporte después del lanzamiento de la tienda?",
+      "description": "Sí, ofrezco orientación para ayudarte a entender y utilizar mejor tu tienda. Si es necesario, puedo asistirte en aprender cómo funciona y proporcionarte las claves para gestionarla de forma independiente."
+    },
+    "item3": {
+      "title": "¿Puedes desarrollar características personalizadas?",
+      "description": "Absolutamente. Con mi experiencia en desarrollo backend de Shopify, puedo crear características personalizadas a través de la API de Shopify, desarrollar aplicaciones privadas e implementar automatizaciones específicas adaptadas a tus necesidades."
+    },
+    "item4": {
+      "title": "¿Cuáles son tus precios?",
+      "description": "Dado que cada proyecto es único, los precios se adaptan a tus necesidades específicas. Proporciono una cotización detallada después de nuestra primera conversación, que incluye el desarrollo, las integraciones necesarias y las opciones de soporte."
+    }
+  },
+  "blog": {
+    "title": "Últimos Artículos de Shopify"
+  }
+}

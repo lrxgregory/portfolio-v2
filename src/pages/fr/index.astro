@@ -8,23 +8,16 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import { defaultLang, t } from '~/utils/i18n.ts';
+import { t } from '~/utils/i18n.ts';
 
-// Récupérer la langue depuis Astro.props
-const { lang = defaultLang } = Astro.props;
-
-// Rediriger vers la langue par défaut
-if (lang === defaultLang) {
-  Astro.response.status = 301;
-  Astro.response.headers.set('Location', `/${defaultLang}`);
-}
+const lang = 'fr';
 
 const metadata = {
   title: t('hero.title', lang),
   ignoreTitleTemplate: true,
 };
----
 
+---
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->

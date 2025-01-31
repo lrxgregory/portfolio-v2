@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Voir mes services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Je vous accompagne dans vos projets ",
+    "subtitle": "De la conception de la boutique aux solutions techniques avancées",
+    "cta": "Réserver un appel"
+  },
+  "about": {
+    "title": "Lancez votre boutique Shopify en 3 étapes simples",
+    "subtitle": "Une approche personnalisée pour vous aider à atteindre vos objectifs",
+    "step1": {
+      "title": "Étape 1 : Définition du projet",
+      "description": "Nous discutons ensemble de vos besoins : design, fonctionnalités, intégrations API, migration Prestashop, etc."
+    },
+    "step2": {
+      "title": "Étape 2 : Développement & Personnalisation",
+      "description": "Nous travaillons en étroite collaboration pour concevoir, développer et personnaliser votre boutique Shopify."
+    },
+    "step3": {
+      "title": "Étape 3 : Mise en ligne et suivi",
+      "description": "Je vous accompagne dans la prise en main et vous propose un suivi pour garantir un lancement sans accroc."
+    },
+    "step4": {
+      "title": "Votre boutique est prête à vendre !"
+    }
+  },
+  "services": {
+    "title": "Mes services Shopify",
+    "description": "Des solutions sur mesure pour optimiser votre boutique Shopify",
+    "service1": {
+      "title": "Création de Boutique Shopify sur mesure",
+      "description": "Mise en place et configuration complète d'une boutique Shopify prête à vendre."
+    },
+    "service2": {
+      "title": "Développement Shopify sur mesure",
+      "description": "Développement de fonctionnalités avancées, API, webhooks, intégrations tierces."
+    },
+    "service3": {
+      "title": "Création de thèmes Shopify personnalisés",
+      "description": "Un design unique et optimisé pour l'expérience utilisateur et les conversions."
+    },
+    "service4": {
+      "title": "Migration de boutique Prestashop vers Shopify",
+      "description": "Accompagnement complet pour transférer votre boutique Prestashop vers Shopify sans perte de données."
+    }
+  },
+  "expertise": {
+    "title": "Expertise Shopify",
+    "subtitle": "Des solutions techniques avancées pour votre boutique en ligne",
+    "tagline": "Compétences techniques",
+    "item1": {
+      "title": "Développement Backend",
+      "description": "Architecture robuste et évolutive pour gérer vos opérations e-commerce avec efficacité."
+    },
+    "item2": {
+      "title": "Thèmes Sur Mesure",
+      "description": "Un design unique qui reflète votre marque et optimise l'expérience utilisateur."
+    },
+    "item3": {
+      "title": "Intégrations API",
+      "description": "Connexion transparente entre Shopify et vos outils externes pour une gestion simplifiée."
+    },
+    "item4": {
+      "title": "Migration PrestaShop vers Shopify",
+      "description": "Transfert sécurisé de votre boutique PrestaShop vers Shopify, sans perte de données."
+    },
+    "item5": {
+      "title": "Automatisation",
+      "description": "Workflows automatisés pour simplifier vos opérations quotidiennes et gagner du temps."
+    },
+    "item6": {
+      "title": "Support Technique",
+      "description": "Accompagnement expert pour garantir le bon fonctionnement de votre boutique."
+    }
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Réponses à vos interrogations pour une collaboration en toute transparence",
+    "tagline": "Tout ce que vous devez savoir",
+    "item1": {
+      "title": "Comment se déroule un projet de création de boutique Shopify ?",
+      "description": "Le processus commence par une réunion de cadrage pour comprendre vos besoins et objectifs. Je propose ensuite un devis détaillé et un planning. Le développement se fait par étapes avec des points réguliers pour validation. Une fois la boutique terminée, je vous forme à son utilisation et reste disponible pour le support."
+    },
+    "item2": {
+      "title": "Proposez-vous un accompagnement après la mise en ligne ?",
+      "description": "Oui, je propose un accompagnement pour vous aider à mieux comprendre et utiliser votre boutique. Si besoin, je peux vous guider sur son fonctionnement et vous donner les clés pour être autonome dans sa gestion."
+    },
+    "item3": {
+      "title": "Pouvez-vous développer des fonctionnalités sur mesure ?",
+      "description": "Absolument. Grâce à mon expertise en développement backend Shopify, je peux créer des fonctionnalités personnalisées via l'API Shopify, développer des applications privées, et mettre en place des automatisations spécifiques à vos besoins."
+    },
+    "item4": {
+      "title": "Quels sont vos tarifs ?",
+      "description": "Chaque projet étant unique, les tarifs sont établis sur mesure en fonction de vos besoins. Je propose un devis détaillé après notre première discussion, incluant le développement, les intégrations nécessaires, et les options de maintenance."
+    }
+  },
+  "blog": {
+    "title": "Derniers Articles sur Shopify"
+  }
+}

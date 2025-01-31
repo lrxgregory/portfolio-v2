@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "View My Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "I help you with your projects ",
+    "subtitle": "From store design to advanced technical solutions",
+    "cta": "Book a Call"
+  },
+  "about": {
+    "title": "Launch Your Shopify Store in 3 Simple Steps",
+    "subtitle": "A personalized approach to help you reach your goals",
+    "step1": {
+      "title": "Step 1: Project Definition",
+      "description": "We discuss your needs together: design, features, API integrations, PrestaShop migration, etc."
+    },
+    "step2": {
+      "title": "Step 2: Development & Customization",
+      "description": "We work closely to design, develop, and customize your Shopify store."
+    },
+    "step3": {
+      "title": "Step 3: Launch & Support",
+      "description": "I guide you through the setup and provide support to ensure a smooth launch."
+    },
+    "step4": {
+      "title": "Your store is ready to sell!"
+    }
+  },
+  "services": {
+    "title": "My Shopify Services",
+    "description": "Custom solutions to optimize your Shopify store",
+    "service1": {
+      "title": "Custom Shopify Store Creation",
+      "description": "Complete setup and configuration of a Shopify store ready to sell."
+    },
+    "service2": {
+      "title": "Custom Shopify Development",
+      "description": "Development of advanced features, APIs, webhooks, and third-party integrations."
+    },
+    "service3": {
+      "title": "Custom Shopify Themes",
+      "description": "A unique design optimized for user experience and conversions."
+    },
+    "service4": {
+      "title": "PrestaShop to Shopify Migration",
+      "description": "Full support to transfer your PrestaShop store to Shopify without data loss."
+    }
+  },
+  "expertise": {
+    "title": "Shopify Expertise",
+    "subtitle": "Advanced technical solutions for your online store",
+    "tagline": "Technical Skills",
+    "item1": {
+      "title": "Backend Development",
+      "description": "A robust and scalable architecture to efficiently manage your e-commerce operations."
+    },
+    "item2": {
+      "title": "Custom Themes",
+      "description": "A unique design that reflects your brand and enhances user experience."
+    },
+    "item3": {
+      "title": "API Integrations",
+      "description": "Seamless connection between Shopify and your external tools for simplified management."
+    },
+    "item4": {
+      "title": "PrestaShop to Shopify Migration",
+      "description": "Secure transfer of your PrestaShop store to Shopify without data loss."
+    },
+    "item5": {
+      "title": "Automation",
+      "description": "Automated workflows to simplify daily operations and save time."
+    },
+    "item6": {
+      "title": "Technical Support",
+      "description": "Expert guidance to ensure your store runs smoothly."
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to your questions for a transparent collaboration",
+    "tagline": "Everything You Need to Know",
+    "item1": {
+      "title": "How does a Shopify store creation project work?",
+      "description": "The process starts with a kickoff meeting to understand your needs and goals. I then provide a detailed quote and timeline. Development is done in stages with regular validation points. Once the store is complete, I train you on its use and remain available for support."
+    },
+    "item2": {
+      "title": "Do you offer support after the store launch?",
+      "description": "Yes, I offer guidance to help you better understand and use your store. If needed, I can assist you in learning how it works and provide the keys to manage it independently."
+    },
+    "item3": {
+      "title": "Can you develop custom features?",
+      "description": "Absolutely. With my expertise in Shopify backend development, I can create custom features via the Shopify API, develop private apps, and implement specific automations tailored to your needs."
+    },
+    "item4": {
+      "title": "What are your prices?",
+      "description": "Since each project is unique, pricing is tailored to your specific needs. I provide a detailed quote after our initial discussion, including development, necessary integrations, and support options."
+    }
+  },
+  "blog": {
+    "title": "Latest Shopify Articles"
+  }
+}

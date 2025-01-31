@@ -1,0 +1,43 @@
+---
+import { Icon } from 'astro-icon/components';
+import { languages, getLangFromUrl } from '~/utils/i18n';
+
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+const currentLang = getLangFromUrl(Astro.url);
+---
+
+<div class:list={['relative', className]}>
+  <select
+    id="language-selector"
+    class="appearance-none bg-transparent border border-gray-300 dark:border-gray-600 rounded-lg px-2 py-1 pr-6 hover:border-gray-400 dark:hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-600 dark:focus:ring-primary-400 text-sm"
+    value={currentLang}
+  >
+    {
+      Object.entries(languages).map(([code, name]) => (
+        <option value={code} selected={code === currentLang}>
+          {name}
+        </option>
+      ))
+    }
+  </select>
+  <Icon name="tabler:chevron-down" class="absolute right-1 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-500" />
+</div>
+
+<script>
+  import { translatePath, type Language } from "~/utils/i18n";
+
+  const languageSelector = document.getElementById('language-selector') as HTMLSelectElement;
+
+  if (languageSelector) {
+    languageSelector.addEventListener('change', (e) => {
+      const target = e.target as HTMLSelectElement;
+      const newLang = target.value as Language;
+      const newPath = translatePath(window.location.pathname, newLang);
+      window.location.pathname = newPath;
+    });
+  }
+</script>
