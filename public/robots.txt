@@ -1,2 +1,7 @@
 User-agent: *
-Disallow:
+Disallow: /fr/mentions-legales/
+Disallow: /fr/cgu/
+Disallow: /en/mentions-legales/
+Disallow: /en/cgu/
+Disallow: /es/mentions-legales/
+Disallow: /es/cgu/

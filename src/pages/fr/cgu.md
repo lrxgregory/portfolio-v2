@@ -1,6 +1,7 @@
 ---
 title: "Conditions générales d'utilisation"
 layout: "~/layouts/MarkdownLayout.astro"
+robots: "noindex, nofollow"
 ---
 
 En vigueur au 25/01/2025

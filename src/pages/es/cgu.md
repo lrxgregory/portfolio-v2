@@ -1,6 +1,7 @@
 ---
 title: "Términos y Condiciones"
 layout: "~/layouts/MarkdownLayout.astro"
+robots: "noindex, nofollow"
 ---
 
 Vigente a partir del 25/01/2025

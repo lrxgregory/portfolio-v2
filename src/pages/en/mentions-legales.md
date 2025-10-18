@@ -1,6 +1,7 @@
 ---
 title: "Legal Notice"
 layout: "~/layouts/MarkdownLayout.astro"
+robots: "noindex, nofollow"
 ---
 
 Effective as of 25/01/2025

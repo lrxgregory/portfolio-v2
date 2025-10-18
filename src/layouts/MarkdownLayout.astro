@@ -6,13 +6,25 @@ import type { MetaData } from '~/types';
 export interface Props {
   frontmatter: {
     title?: string;
+    robots?: string;
   };
 }
 
 const { frontmatter } = Astro.props;
 
+// Parse robots string into object format
+let robotsConfig = {};
+if (frontmatter.robots) {
+  const robotsArray = frontmatter.robots.split(',').map(s => s.trim());
+  robotsConfig = {
+    index: !robotsArray.includes('noindex'),
+    follow: !robotsArray.includes('nofollow')
+  };
+}
+
 const metadata: MetaData = {
   title: frontmatter?.title,
+  robots: frontmatter.robots ? robotsConfig : undefined,
 };
 ---
 
